@@ -203,7 +203,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        
+
         option = int(input("what would you like to see about you choice?\n"
                            "1- time stats\n"
                            "2- station stats\n"
@@ -211,6 +211,15 @@ def main():
                            "4- user stats\n"
                            "5- all\n"
                            "please Enter only digit number\n"))
+        while option not in range(1,6):
+            print("wrong input")
+            option = int(input("what would you like to see about you choice?\n"
+                                "1- time stats\n"
+                                "2- station stats\n"
+                               "3- trip duration stats\n"
+                               "4- user stats\n"
+                               "5- all\n"
+                               "please Enter only digit number\n"))
         if option == 1:
             time_stats(df)
         elif option == 2:
