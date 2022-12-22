@@ -199,16 +199,40 @@ def user_stats(df):
     print('-' * 40)
 
 
-def main():
-    while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+def options(df):
+    message = "what would you like to see about you choice?\n" \
+                       "1- time stats\n" \
+                       "2- station stats\n" \
+                       "3- trip duration stats\n" \
+                       "4- user stats\n" \
+                       "5- all\n" \
+                       "please Enter only digit number\n"
 
+    option = int(input(message))
+    while option not in range(1, 6):
+        print("wrong input")
+        option = int(input(message))
+        
+    if option == 1:
+        time_stats(df)
+    elif option == 2:
+        station_stats(df)
+    elif option == 3:
+        trip_duration_stats(df)
+    elif option == 4:
+        user_stats(df)
+    elif option == 5:
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
 
+
+def main():
+    while True:
+        city, month, day = get_filters()
+        df = load_data(city, month, day)
+        options(df)
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         if restart != "yes":
             break
