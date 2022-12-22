@@ -11,8 +11,9 @@ this code is for retriving data from a sprcific CSV files,
 where we can find out some stastic information and more
 
 ### Files used
-Include the files used
+we used 3 files wich are chicago.csv and
+washingtion.csv and at last new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+thanks for Israa and to udacity team :).
 
