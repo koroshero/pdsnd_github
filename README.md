@@ -7,7 +7,8 @@
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+this code is for retriving data from a sprcific CSV files,
+where we can find out some stastic information and more
 
 ### Files used
 Include the files used
