@@ -8,7 +8,7 @@ bikeshare
 
 ### Description
 this code is for retriving data from a sprcific CSV files,
-where we can find out some stastic information and more
+where we can find out some stastic information and more.
 
 ### Files used
 we used 3 files wich are chicago.csv and
@@ -20,3 +20,8 @@ thanks for Israa and to udacity team :).
 ### Notes
 I recommend that you use a jupyter notebook while you are testing the code
 it is easer and much cleaner.
+
+in the file bikeshare.py I wrote a simple way to handel the program, 
+I do recommend that you add some feature in the future.
+
+no OOP where implminted.
